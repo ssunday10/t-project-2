@@ -19,7 +19,7 @@ body {
 .top-nav, .contact {
     list-style-type: none;
     text-transform: uppercase;
-    
+    font-weight: 700;
 }
 
 a {
@@ -34,7 +34,9 @@ a:hover {
 /* Section Styles */
 
 .card {
-    display: inline-block;
+   display: inline-flex;
+   flex-direction: column;
+   flex-wrap: wrap;
 }
 
 
@@ -49,5 +51,72 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: .05em;
-    padding: 25px;
+}
+
+.img {
+    margin: 0 auto;
+    width: 50%;
+    height: 30%;
+    display: inline-block;
+}
+.image {
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    display: inline-block;
+    
+}
+ 
+
+.information {
+    list-style: none;
+}
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
+    .nav {
+        display: none;
+    }
+
+    .footer {
+       
+    }
+
+    .foot {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .end {
+        font-weight: 500;
+        display: inline-flex;
+        list-style: none;
+        text-align: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+   
+   
+   
+   
+   
+   
+   
+   
+    footer {
+        <nav>
+        <ul class="nav">
+          <li><a href="#">Student Name</a></li>
+          <li><a href="t-project-2.html">home</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="skills.html">skills</a></li>
+        </ul>
+      </nav>
+    }
 }
