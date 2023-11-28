@@ -31,8 +31,10 @@ a:hover {
     color: red;
 }
 
-/* Section Styles */
 
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
 .flex {
     padding: 8%;
     line-height: 1.2;
@@ -47,6 +49,7 @@ a:hover {
 .top-nav, .information {
     line-height: 2;
 }
+
 .nav {
     display: flex;
     text-align: center;
@@ -60,19 +63,6 @@ nav {
     letter-spacing: .05em;
 }
 
-.img {
-    margin: 0 auto;
-    width: 60%;
-    height: 4%;
-    display: inline-flex;
-}
-.image {
-    margin: 0 auto;
-    width: 80%;
-    height: 50%;
-    display: inline-block;
-    
-}
  
 .main {
     padding: 5%;
@@ -91,9 +81,6 @@ nav {
     padding: 20%;
 }
 
-/* Media Queries */
-
-@media screen and (min-width: 320px) {
     .nav {
         display: none;
     }
@@ -110,30 +97,63 @@ nav {
         list-style: none;  
         justify-content: space-between;
     }
+
+    .img {
+        margin: 0 auto;
+        width: 60%;
+        height: 4%;
+        display: inline-flex;
+    }
+     
+
+    .image {
+        margin: 0 auto;
+        width: 80%;
+        height: 50%;
+        display: inline-block;
+        
+    }
 }
 
 @media screen and (min-width: 768px) {
 
+
+
+    .card {
+    display: block;
+    float: right;
+    padding: 5% 0 0 0;
+    }
+
+    .intro {
+        padding: 2px 5px;
+    }
+
+    .img {
+        diplay: inline-flex;
+        float: right;
+        margin: 2px 2px;
+    }
+
+    .end {
+        display: none;
+    }
+
+    .nav {
+        display: inline-flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
 }
+      
+
 
 @media screen and (min-width: 1024px) {
    
-   
-   
-   
-   
-   
-   
-   
-    footer {
-        <nav>
-        <ul class="nav">
-          <li><a href="#">Student Name</a></li>
-          <li><a href="t-project-2.html">home</a></li>
-          <li><a href="portfolio.html">portfolio</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="skills.html">skills</a></li>
-        </ul>
-      </nav>
-    }
 }
