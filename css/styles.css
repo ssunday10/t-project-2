@@ -16,10 +16,10 @@ body {
 
 /* Link Styles */
 
-.top-nav, .contact {
+.top-nav, .contact, .foots, .name {
     list-style-type: none;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a {
@@ -27,10 +27,20 @@ a {
     color: black;
 }
 
-a:hover {
+a:hover, .top-nav:hover {
     color: red;
 }
 
+
+/* Base style */
+
+.information {
+    color: blue;
+}
+
+.top-nav {
+    background-color: paleturquoise;
+}
 
 /* Media Queries */
 
@@ -119,6 +129,21 @@ nav {
 
 
 
+    .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.project {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.portfolio {
+    line-height: 10;
+}
+
     .card {
     display: block;
     float: right;
@@ -130,7 +155,9 @@ nav {
     }
 
     .img {
-        diplay: inline-flex;
+        display: inline-flex;
+        width: auto;
+        height: auto;
         float: right;
         margin: 2px 2px;
     }
@@ -145,15 +172,61 @@ nav {
         text-align: center;
     }
 
-    .footer {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
+    ul, li, .nav, .foots {
+        display: inline-block;
     }
-}
-      
+    
+    
+    
+    .nav {
+        font-weight: 500;
+        display: flex;
+        list-style: none;  
+        justify-content: space-around;
+    }
+  
+}     
 
 
 @media screen and (min-width: 1024px) {
    
+    .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .project {
+    flex-grow: 1;
+    flex-basis: 30%;
+   }
+
+   .nav {
+    display: inline-flex;
+    justify-content: space-between;
+   }
+
+   .intro {
+    padding: 3px 10px;
+    font-size: 1.2em;
+}
+
+.img {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 5px 5px;
+}
+
+#name, .top-nav {
+    display: inline-block;
+}
+
+.nav {
+    font-weight: 500;
+    display: flex;
+    list-style: none;  
+    justify-content: space-around;
+}
+
 }
