@@ -12,6 +12,7 @@ body {
     background: white;
     color: black;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 /* Link Styles */
@@ -20,6 +21,7 @@ body {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 600;
+    text-align: center;
 }
 
 a {
@@ -40,24 +42,25 @@ a:hover, .top-nav:hover {
 
 .top-nav {
     background-color: paleturquoise;
+    text-align: center;
+    margin: auto;
+    padding: 2px 5px 2px 2px;
 }
 
-/* Media Queries */
-
-@media screen and (min-width: 320px) {
 .flex {
     padding: 8%;
     line-height: 1.2;
 }
 
-.card {
+.project {
    display: inline-flex;
    flex-direction: column;
    flex-wrap: wrap;
+   padding: 5px 5px;
 }
 
 .top-nav, .information {
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .nav {
@@ -89,30 +92,34 @@ nav {
 
 .contact {
     padding: 20%;
+    margin: 20px 20px;
 }
 
-    .nav {
+ .nav {
         display: none;
     }
 
-    .foot {
+ .end {
         font-weight: 500;
         text-transform: uppercase;
-        float: right;
     }
     
-    .end {
+ #nam {
         font-weight: 500;
         display: flex;
         list-style: none;  
         justify-content: space-between;
+        margin: 10px;
+        padding: 10px;
     }
 
-    .img {
-        margin: 0 auto;
+.img {
+        margin: auto;
         width: 60%;
         height: 4%;
         display: inline-flex;
+        padding: 20px 5px 5px 20px;
+
     }
      
 
@@ -123,16 +130,34 @@ nav {
         display: inline-block;
         
     }
-}
+
+    .foot, .foots {
+        text-align: right;
+        margin: 10px 10px;
+    }
+
+
+    .portfolio {
+        margin: 20px 20px;
+        padding: 10px 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
 
+.foot {
+    display: none;
+}
 
-
-    .projects-container {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .project {
@@ -144,68 +169,69 @@ nav {
     line-height: 10;
 }
 
-    .card {
+.card {
     display: block;
     float: right;
     padding: 5% 0 0 0;
     }
 
-    .intro {
-        padding: 2px 5px;
-    }
+.intro {
+      padding: 2px 5px;
+ }
 
-    .img {
-        display: inline-flex;
-        width: auto;
-        height: auto;
-        float: right;
-        margin: 2px 2px;
-    }
+.img {
+    display: inline-flex;
+     width: auto;
+      height: auto;
+     float: right;
+     margin: 2px 2px;
+  }
 
-    .end {
-        display: none;
-    }
+.end {
+    display: none;
+}
 
-    .nav {
-        display: inline-flex;
-        justify-content: space-between;
-        text-align: center;
-    }
+.nav {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
-    ul, li, .nav, .foots {
-        display: inline-block;
-    }
-    
-    
-    
-    .nav {
-        font-weight: 500;
-        display: flex;
-        list-style: none;  
-        justify-content: space-evenly;
-        word-spacing: 1.5em;
-    }
+ul, li, .nav, .foots {
+    display: inline-block;
+}
 
-    .footer {
-        display: flex;
-        justify-content: space-between;
-    }
-  
-    .foots {
-        padding: 0px;
-        margin: 5px;
-    }
-}     
+.nav {
+    font-weight: 500;
+    display: flex;
+    list-style: none;  
+    justify-content: space-evenly;
+    word-spacing: 1.5em;
+}
+}
 
 
 @media screen and (min-width: 1024px) {
    
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
     .top-nav {
-        float: right;
         word-spacing: 1.5em;
+        padding: 5px;
+        margin: 5px;
     }
 
-    .projects-container {
+    #name {
+        display: flex;
+        justify-content: center;
+        font: 2.5em;
+        text-align: right;
+    }
+
+ .projects-container {
     display: flex;
     flex-wrap: wrap;
    }
@@ -218,25 +244,29 @@ nav {
    .nav {
     display: inline-flex;
     justify-content: space-between;
-    float: right;
     word-spacing: 1.5em;
+    padding: 10px;
+    margin: 5px;
    }
 
    .intro {
-    padding: 3px 10px;
+    padding: 10px;
     font-size: 1.2em;
+    margin: 25px;
 }
 
 .img {
     display: inline-flex;
     width: auto;
     height: auto;
-    float: right;
     margin: 5px 5px;
+    padding: 40px;
 }
 
-#name, .top-nav {
+#name, .top-nav, #nam {
     display: inline-block;
+    padding: 10px;
+    margin: 10px;
 }
 
 .nav {
@@ -244,10 +274,14 @@ nav {
     display: flex;
     list-style: none;  
     justify-content: space-around;
-    float: right;
 }
-#name {
-    float: left;
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-basis: 100%;
 }
 
 .footer {
@@ -255,8 +289,4 @@ nav {
     justify-content: space-between;
 }
 
-.foots {
-    padding: 0px;
-    margin: 5px;
-}
-}
+}     
