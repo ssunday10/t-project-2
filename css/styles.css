@@ -171,20 +171,30 @@ nav {
 
 .card {
     display: block;
-    float: right;
     padding: 5% 0 0 0;
     }
 
-.intro {
+.introduction {
       padding: 2px 5px;
- }
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-around; 
+      flex: 1;
+    }
+     
+.intro {
+        align-self: flex-start;
+        flex: 2;
+    }
+ 
 
 .img {
-    display: inline-flex;
-     width: auto;
-      height: auto;
-     float: right;
-     margin: 2px 2px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 2px 35vh;
   }
 
 .end {
