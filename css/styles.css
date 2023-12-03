@@ -138,8 +138,8 @@ nav {
 
 
     .portfolio {
-        margin: 20px 20px;
-        padding: 10px 10px;
+        margin: 10px 10px;
+        padding: 5px 5px;
     }
 
     .footer {
@@ -174,28 +174,35 @@ nav {
     padding: 5% 0 0 0;
     }
 
-.introduction {
-      padding: 2px 5px;
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      justify-content: space-around; 
-      flex: 1;
-    }
-     
 .intro {
-        align-self: flex-start;
-        flex: 2;
-    }
- 
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 25px;
+    align-self: flex-start;
+    flex: 2;
+        
+}
+    
+
+
+.introduction {
+    padding: 2px 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center; 
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    text-align: left;
+  }
 
 .img {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     width: auto;
     height: auto;
-    margin: 2px 35vh;
-  }
+    margin: 5px 5px;
+    padding: 5px;
+}
 
 .end {
     display: none;
@@ -227,6 +234,11 @@ ul, li, .nav, .foots {
     display: flex;
     justify-content: space-between;
 }
+
+.portfolio {
+    line-height: 3;
+}
+
 
     .top-nav {
         word-spacing: 1.5em;
@@ -263,14 +275,18 @@ ul, li, .nav, .foots {
     padding: 10px;
     font-size: 1.2em;
     margin: 25px;
-}
+   }
+
+   .introduction {
+    text-align: left;
+   }
 
 .img {
     display: inline-flex;
     width: auto;
     height: auto;
     margin: 5px 5px;
-    padding: 40px;
+    padding: 10px;
 }
 
 #name, .top-nav, #nam {
@@ -298,5 +314,4 @@ ul, li, .nav, .foots {
     display: flex;
     justify-content: space-between;
 }
-
 }     
