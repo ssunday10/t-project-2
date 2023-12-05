@@ -13,8 +13,28 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+
 }
 
+.headers {
+    font-size: 1.5em;
+}
+
+.portfolio {
+    font-size: 2em;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0;
+}
 /* Link Styles */
 
 .top-nav, .contact, .foots, .name {
@@ -44,7 +64,7 @@ a:hover, .top-nav:hover {
     background-color: paleturquoise;
     text-align: center;
     margin: auto;
-    padding: 2px 5px 2px 2px;
+    padding: 10px 10px;
 }
 
 .flex {
@@ -131,21 +151,17 @@ nav {
         
     }
 
-    .foot, .foots {
-        text-align: right;
-        margin: 10px 10px;
-    }
-
+ .foot, .foots {
+    text-align: right;
+    margin: 10px 10px;
+ }
 
     .portfolio {
         margin: 10px 10px;
         padding: 5px 5px;
     }
 
-    .footer {
-        display: flex;
-        justify-content: space-between;
-    }
+ 
 
 /* Media Queries */
 
@@ -308,10 +324,5 @@ ul, li, .nav, .foots {
     flex-wrap: wrap;
     flex: 1 1 auto;
     flex-basis: 100%;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
 }
 }     
