@@ -101,6 +101,7 @@ a:hover, .top-nav:hover {
     text-align: center;
     list-style:none;
     justify-content:space-between;
+    gap: 1rem;
 }
 
 nav {
@@ -192,7 +193,7 @@ nav {
 }
 
 .portfolio {
-    line-height: 10;
+    line-height: 3;
 }
 
 .card {
@@ -208,8 +209,6 @@ nav {
     flex: 2;
         
 }
-    
-
 
 .introduction {
     padding: 2px 5px;
@@ -246,6 +245,8 @@ ul, li, .nav, .foots {
     word-spacing: 1.5em;
     text-align: center;
 }
+
+
 }
 
 
@@ -255,11 +256,6 @@ ul, li, .nav, .foots {
     display: flex;
     justify-content: space-between;
 }
-
-.portfolio {
-    line-height: 3;
-}
-
 
 .top-nav {
     word-spacing: 1.5em;
