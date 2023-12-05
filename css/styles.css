@@ -30,10 +30,18 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer p {
-    margin: 0;
+    margin: 2px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.foot {
+    margin: 10px;
+    padding: 10px;
 }
 /* Link Styles */
 
@@ -42,6 +50,12 @@ footer p {
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
+}
+
+.tops {
+    background-color:paleturquoise;
+    margin: 3px;
+    padding: 3px;
 }
 
 a {
@@ -61,7 +75,6 @@ a:hover, .top-nav:hover {
 }
 
 .top-nav {
-    background-color: paleturquoise;
     text-align: center;
     margin: auto;
     padding: 10px 10px;
@@ -116,50 +129,47 @@ nav {
 }
 
  .nav {
-        display: none;
-    }
+    display: none;
+}
 
  .end {
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+    font-weight: 500;
+    text-transform: uppercase;
+}
     
- #nam {
-        font-weight: 500;
-        display: flex;
-        list-style: none;  
-        justify-content: space-between;
-        margin: 10px;
-        padding: 10px;
-    }
+#nam {
+    font-weight: 500;
+    display: flex;
+    list-style: none;  
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
 
 .img {
-        margin: auto;
-        width: 60%;
-        height: 4%;
-        display: inline-flex;
-        padding: 20px 5px 5px 20px;
+    margin: auto;
+    width: 60%;
+    height: 4%;
+    display: inline-flex;
+    padding: 20px 5px 5px 20px;
 
-    }
-     
+}
+    
 
-    .image {
-        margin: 0 auto;
-        width: 80%;
-        height: 50%;
-        display: inline-block;
-        
-    }
+.image {
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    display: inline-block;
+    
+}
 
- .foot, .foots {
-    text-align: right;
+
+
+.portfolio {
     margin: 10px 10px;
- }
-
-    .portfolio {
-        margin: 10px 10px;
-        padding: 5px 5px;
-    }
+    padding: 5px 5px;
+}
 
  
 
@@ -224,12 +234,6 @@ nav {
     display: none;
 }
 
-.nav {
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
 ul, li, .nav, .foots {
     display: inline-block;
 }
@@ -238,8 +242,9 @@ ul, li, .nav, .foots {
     font-weight: 500;
     display: flex;
     list-style: none;  
-    justify-content: space-evenly;
+    justify-content: space-between;
     word-spacing: 1.5em;
+    text-align: center;
 }
 }
 
@@ -256,53 +261,53 @@ ul, li, .nav, .foots {
 }
 
 
-    .top-nav {
-        word-spacing: 1.5em;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    #name {
-        display: flex;
-        justify-content: center;
-        font: 2.5em;
-        text-align: right;
-    }
-
- .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-   }
-
-   .project {
-    flex-grow: 1;
-    flex-basis: 30%;
-   }
-
-   .nav {
-    display: inline-flex;
-    justify-content: space-between;
+.top-nav {
     word-spacing: 1.5em;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
-   }
+}
 
-   .intro {
-    padding: 10px;
-    font-size: 1.2em;
-    margin: 25px;
-   }
+#name {
+    display: flex;
+    justify-content: center;
+    font: 2.5em;
+    text-align: right;
+}
 
-   .introduction {
-    text-align: left;
-   }
+.projects-container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.project {
+flex-grow: 1;
+flex-basis: 30%;
+}
+
+.nav {
+display: inline-flex;
+justify-content: space-between;
+word-spacing: 1.5em;
+padding: 10px;
+margin: 10px;
+}
+
+.intro {
+padding: 10px;
+font-size: 1.2em;
+margin: 25px;
+}
+
+.introduction {
+text-align: left;
+}
 
 .img {
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    margin: 5px 5px;
-    padding: 10px;
+display: inline-flex;
+width: auto;
+height: auto;
+margin: 5px 5px;
+padding: 10px;
 }
 
 #name, .top-nav, #nam {
